@@ -1,0 +1,11 @@
+#container-form1 {
+    background-color: white;
+    width: 20rem;
+    padding: 20px;
+    border-radius: 8px;
+    height: 20rem;
+
+}
+#lastinput {
+    margin-bottom: 1rem;
+}

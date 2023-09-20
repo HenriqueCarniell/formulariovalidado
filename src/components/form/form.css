@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(13, 46, 46);
+}
+
+#container-form {
+    background-color: white;
+    width: 20rem;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+#mensagem-certo {
+    display: flex;
+    justify-content: center;
+}
+#mensagem-certo p{
+    color: green;
+}
+label {
+    font-size: 18px;
+}
+input {
+    width: 95%;
+    border: 3px solid black;
+    padding: 7px;
+}
+#criarconta-div-input {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 0.5rem;
+}
+#botao {
+    width: 100%;
+    background-color: rgb(13, 46, 46);
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+#botao-div {
+    display: flex;
+    justify-content: center;
+}
+#titulo-div-input {
+    display: flex;
+    justify-content: center;
+}
