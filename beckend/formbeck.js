@@ -41,7 +41,7 @@ app.post("/criardados", (req,res) => {
         res.status(500).json(err);
       } else {
         console.log(result);
-        res.status(200).json(result)
+        res.status(200).json(result);
       }
     })
 })
@@ -49,4 +49,4 @@ app.post("/criardados", (req,res) => {
 const porta1 = 5000;
 app.listen(porta1, () => {
   console.log(`Servidor rodando na porta: ${porta1}`);
-});
+})

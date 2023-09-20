@@ -1,23 +1,23 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import './createacount.css'
+import './createacount.css';
 
 function CreateACC() {
     const [nome, saveNome] = useState('');
     const [email, saveEmail] = useState('');
     const [senha, saveSenha] = useState('');
 
-    const navigate = useNavigate(); // Mova useNavigate para fora da função Navigate
+    const navigate = useNavigate();
 
     const HandleNome = (e) => {
-        saveNome(e.target.value)
+        saveNome(e.target.value);
     }
     const HandleEmail = (e) => {
-        saveEmail(e.target.value)
+        saveEmail(e.target.value);
     }
     const HandleSenha = (e) => {
-        saveSenha(e.target.value)
+        saveSenha(e.target.value);
     }
 
     const handleRegisterDados = async() => {
@@ -27,12 +27,8 @@ function CreateACC() {
             Senha: senha,
         }
 
-        await axios.post("http://localhost:5000/dados", {
-            Nome: Bases.Nome,
-            Email: Bases.Email,
-            Senha: Bases.Senha,
-        })
-        navigate("/"); // Navegue para a rota raiz aqui
+        await axios.post("http://localhost:5000/criardados", Bases);
+        navigate("/");
     }
 
     return ( 

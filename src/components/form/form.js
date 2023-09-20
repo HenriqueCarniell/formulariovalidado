@@ -1,4 +1,4 @@
-import './form.css'
+import './form.css';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -11,18 +11,18 @@ function Form() {
 
   const HandleSaveEmail = (e) => {
     setEmail(e.target.value);
-  }
+  };
 
   const HandleSaveSenha = (e) => {
     setSenha(e.target.value);
-  }
+  };
 
   useEffect(() => {
     axios.get('http://localhost:5000/dados')
       .then(response => {
         setData(response.data);
       })
-  },[])
+  },[]);
 
   const HandleLoginDados = () => {
     const user = data.find(user => user.email === email && user.senha === senha);
@@ -33,7 +33,7 @@ function Form() {
       setMensagemErrado('E-mail ou senha inválidos!');
       setMensagemCerto('');
     }
-  }
+  };
 
   return (
     <div id="container">
